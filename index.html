@@ -1,0 +1,130 @@
+<!--                   
+   _          _       _ _ 
+   _| |___ _ _ |_|___  |_|_|
+  | . | -_| | || | . | | | |
+  |___|___|\_/_| |___|_| |_|
+             |___|   |___|  
+  
+
+
+
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the webpage -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile Card</title>
+    <!-- Link to the Font Awesome library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-VDnEIO0mIk6XZspdwCvDNTmzLbBMC27x8MkXU7IwmaXA0PmN" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Link to the jQuery library for JavaScript functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body style="background-image: url('https://i.imgur.com/K4TSupZ.gif'); background-size: cover; background-position: center center;">
+    <!-- Container for the profile card -->
+    <div class="container">
+        <div class="profile-card">
+            <!-- Profile picture -->
+            <img src="https://i.imgur.com/4VtNX0K.jpeg" class="profile-pic">
+            <!-- Information about the profile -->
+            <div class="profile-info">
+                <!-- Name -->
+                <h2 style="font-family: monospace; font-size: 25px;">benjoji</h2>
+                <!-- Introduction -->
+                <p style="font-family:monospace;"><strong>Hi!👋 I'm Joji, I'm on my way to becoming a Back-End Developer. I'm trying to specialize in Javascript.</strong></p>
+                <!-- List of skills -->
+                <ul class="skills-list">
+                    <!-- HTML skill -->
+                    <li>
+                        <span class="skill-name">HTML</span>
+                        <!-- Skill bar for HTML -->
+                        <div class="skill-bar">
+                            <!-- Level of HTML skill -->
+                            <div class="skill-level html" style="width: 90%;">
+                                <!-- Percentage of HTML skill -->
+                                <span class="skill-per">90%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- CSS skill -->
+                    <li>
+                        <span class="skill-name">CSS</span>
+                        <!-- Skill bar for CSS -->
+                        <div class="skill-bar">
+                            <!-- Level of CSS skill -->
+                            <div class="skill-level css" style="width: 85%;">
+                                <!-- Percentage of CSS skill -->
+                                <span class="skill-per">85%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- JavaScript skill -->
+                    <li>
+                        <span class="skill-name">JavaScript</span>
+                        <!-- Skill bar for JavaScript -->
+                        <div class="skill-bar">
+                            <!-- Level of JavaScript skill -->
+                            <div class="skill-level javascript" style="width: 80%;">
+                                <!-- Percentage of JavaScript skill -->
+                                <span class="skill-per">80%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Node.js skill -->
+                    <li>
+                        <span class="skill-name">Node.js</span>
+                        <!-- Skill bar for Node.js -->
+                        <div class="skill-bar">
+                            <!-- Level of Node.js skill -->
+                            <div class="skill-level nodejs" style="width: 50%;">
+                                <!-- Percentage of Node.js skill -->
+                                <span class="skill-per">50%</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Center-aligned content -->
+                <center>
+                    <!-- Contact button -->
+                    <a href="#" class="contact-button">
+                        <!-- Contact icon -->
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <!-- Paragraph for contact information -->
+                    <p style="font-family: monospace; font-size: 15px;">Contact me</p>
+                    <!-- Social icons -->
+                    <div class="social-icons">
+                        <!-- Instagram icon -->
+                        <a href="https://www.instagram.com/bengazanfer" class="social-icon instagram"></a>
+                        <!-- GitHub icon -->
+                        <a href="https://github.com/devjoji" class="social-icon github"></a>
+                        <!-- Discord icon -->
+                        <a href="https://discord.com/users/830508932619173929" class="social-icon discord"></a>
+                        <!-- Twitter icon -->
+                        <a href="https://twitter.com/your-twitter-username" class="social-icon twitter"></a>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript code for animating the skill bars -->
+    <script>
+        $(document).ready(function() {
+            $(".skill-level").each(function() {
+                $(this).animate({
+                    width: $(this).attr("style").split(";")[0].split(":")[1]
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- Author: tsgcyberattack@gmail.com /devjoji --> 

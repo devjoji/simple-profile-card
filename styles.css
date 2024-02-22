@@ -1,0 +1,165 @@
+/* Global styles */
+body {
+    font-family: Ubuntu, monospace;
+}
+
+/* Container styles */
+.container {
+    display: flex; /* Centers the content */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Takes up the full viewport height */
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+/* Profile picture styles */
+.profile-pic {
+    width: 100px; /* Sets the width */
+    height: 100px; /* Sets the height */
+    border-radius: 50%; /* Rounds the corners */
+    object-fit: cover; /* Scales the image to fit the container */
+    margin-bottom: 250px; /* Adds space between the profile picture and the skills section */
+}
+
+/* Profile card styles */
+.profile-card {
+    display: flex; /* Aligns the content horizontally */
+    align-items: center; /* Vertically aligns the content */
+    justify-content: space-between; /* Adds space between the skills and the social icons */
+    width: 400px; /* Sets the width */
+    padding: 20px; /* Adds padding around the content */
+    border: 2px solid #cccccc62; /* Adds a border */
+    border-radius: 20px; /* Rounds the corners */
+    background-color: #ffffff77; /* Adds a transparent background color */
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0); /* Adds a shadow */
+}
+
+/* Skill name styles */
+.skill-name {
+    font-weight: bold; /* Makes the text bold */
+    font-family: "Ubuntu", monospace; /* Sets the font family */
+}
+
+/* Skills list styles */
+.skills-list {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Removes the default padding */
+}
+
+/* Skill bar styles */
+.skill-bar {
+    height: 10px; /* Sets the height */
+    background-color: #ddd; /* Sets the background color */
+    border-radius: 10px; /* Rounds the corners */
+    overflow: hidden; /* Prevents the background color from overflowing */
+    margin-bottom: 10px; /* Adds space between the skill bars */
+}
+
+/* Skill level styles */
+.skill-level {
+    height: 100%; /* Takes up the full height */
+    background-color: #f06c64; /* Sets the background color */
+    transition: width 1s; /* Adds a transition effect */
+    position: relative; /* Positions the element relative to its parent */
+}
+
+/* Individual skill styles */
+.html {
+    width: 90%; /* Sets the width */
+    background-color: #ff9900; /* Sets the background color */
+}
+
+.css {
+    width: 85%; /* Sets the width */
+    background-color: #563d7c; /* Sets the background color */
+}
+
+.javascript {
+    width: 80%; /* Sets the width */
+    background-color: #f7df1e; /* Sets the background color */
+}
+
+.nodejs {
+    width: 75%; /* Sets the width */
+    background-color: #1b7a03; /* Sets the background color */
+}
+
+/* Call-to-action button styles */
+.cta-button {
+    display: inline-block; /* Displays the button as an inline element */
+    padding: 10px 20px; /* Adds padding around the content */
+    background-color: #007bff; /* Sets the background color */
+    color: #fff; /* Sets the text color */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px; /* Rounds the corners */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Changes the background color on hover */
+}
+
+/* Social icon styles */
+.fa-github,
+.fa-discord {
+    font-size: 24px; /* Sets the font size */
+    color: #555; /* Sets the text color */
+    transition: color 0.3s; /* Adds a transition effect */
+}
+
+.fa-github:hover,
+.fa-discord:hover {
+    color: #007bff; /* Changes the text color on hover */
+}
+
+/* Skill percentage styles */
+.skill-per {
+    font-size: 12px; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
+    position: absolute; /* Positions the element relative to its parent */
+    top: -1px; /* Positions the text above the skill bar */
+    left: 100%; /* Positions the text to the right of the skill bar */
+    transform: translateX(-50%); /* Aligns the text horizontally */
+    background-color: #ffffff; /* Sets the background color */
+    padding: 0 5px; /* Adds padding around the content */
+    border-radius: 5px; /* Rounds the corners */
+}
+
+/* Social icons container styles */
+.social-icons {
+    display: flex; /* Aligns the icons horizontally */
+    justify-content: center; /* Centers the icons horizontally */
+    margin-top: 20px; /* Adds space between the skills section and the social icons */
+}
+
+/* Social icon styles */
+.social-icon {
+    display: inline-block; /* Displays the icon as an inline element */
+    width: 30px; /* Sets the width */
+    height: 30px; /* Sets the height */
+    margin: 0 10px; /* Adds space between the icons */
+    background-size: cover; /* Scales the image to fit the container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    transition: transform 0.3s; /* Adds a transition effect */
+}
+
+/* Individual social icon styles */
+.instagram {
+    background-image: url('icons/instagram-icon.png'); /* Sets the background image */
+}
+
+.github {
+    background-image: url('icons/github-icon.png'); /* Sets the background image */
+}
+
+.discord {
+    background-image: url('icons/discord-icon.png'); /* Sets the background image */
+}
+
+.twitter {
+    background-image: url('icons/twitter-icon.png'); /* Sets the background image */
+}
+
+/* Social icon hover styles */
+.social-icon:hover {
+    transform: scale(1.2); /* Enlarges the icon on hover */
+}
